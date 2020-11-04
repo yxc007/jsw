@@ -30,6 +30,8 @@ import Layout from '@/layout'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
+import { dishesRoutes } from "./components/dishes.js"
+
 export const constantRoutes = [
   {
     path: '/login',
@@ -54,7 +56,7 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
-
+  dishesRoutes,
   {
     path: '/example',
     component: Layout,
